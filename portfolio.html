@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <style>
+        body {
+            background-image: url("background.jpg");
+            background-size: 1400px;
+            margin-left: 0px;
+            margin-top: 20px;
+            font-family: Arial, sans-serif;
+            display: grid;
+            grid-template-columns: 40% 60%;
+            grid-template-rows: 100px max-content;
+        }
+        .portfolio { 
+            grid-area: 1 / 1 / 2 / 2; 
+            background-color: rgb(255, 80, 80);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%; 
+            border-radius: 0px 20px 0px 0px ;
+            font-size: 40px;
+            font-family: cursive;
+            font-weight: bold;
+            color: white;
+        }
+        .buttons { 
+            grid-area: 1 / 2 / 2 / 3; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            margin-left: 20px;
+        }
+        .profile { 
+            grid-area: 2 / 1 / 3 / 2; 
+            background-color: rgb(255, 80, 80);
+            border-radius: 0px 0px 20px 0px ;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%; 
+            flex-wrap: wrap;
+            padding: 40px;
+        }
+        .content { 
+            grid-area: 2 / 2 / 3 / 3;
+            background-color: transparent;
+            margin-left: 20px;
+        }
+        img {
+            border-radius: 15px;
+            max-width: 80%;
+            height: auto;    
+            margin-left: 80px;
+            margin-right: 80px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        #buttons {
+            background-color: transparent;
+            color: white;
+            border-color: rgb(204, 0, 0);
+            border-style: solid;
+            border-radius: 15px;
+            font-size: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin: 5px;
+        }
+        .menu {
+            color: black;
+            text-decoration: none;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 15px;
+            transition: color 0.3s, font-size 0.3s;
+        }
+
+        .menu:hover {
+            color: rgb(204, 0, 0);
+            font-size: 19px;
+        }
+
+        .profile-button {
+            transition: transform 0.3s, background-color 0.3s, color 0.3s;
+        }
+
+        .profile-button:hover {
+            transform: scale(1.2);
+            background-color: white;
+            font-weight: 600;
+        }
+        
+        #hello-container {
+            text-align: center;
+            margin-top: 30%;
+        }
+        #hello{
+            font-family: cursive;
+            font-size: 40px;
+        }
+        #name{
+            color: rgb(255, 80, 80);
+        }
+        #des{
+            font-size: 15px;
+        }
+        #fonts {
+            font-family: Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body id="borders">
+    <div class="portfolio">PORTFOLIO</div>
+    <div class="buttons" >
+        <a href="portfolio.html" class="menu">HOME</a>
+        <a href="portfolioabout.html" class="menu">ABOUT</a>
+        <a href="portfolioskills.html" class="menu">SKILLS</a>
+        <a href="portfoliocontact.html" class="menu">CONTACT</a>
+    </div>
+    <div class="profile">
+        <img src="pic.jpg" alt="Profile Picture">
+        <br>
+        <div>
+            <button id="buttons" class="profile-button" onclick="window.location.href='https://github.com/Jeya-007'" >github</button>
+            <button id="buttons" class="profile-button" onclick="window.location.href='https://www.linkedin.com/in/jeyaprakash-rajesh-4509652a5/'">linked in</button>
+            <button id="buttons" class="profile-button" onclick="window.location.href='https://www.instagram.com/jeya__007?igsh=M3NrNnBsc3U5Njdt'">instagram</button>
+            <button id="buttons" class="profile-button" onclick="window.location.href='https://x.com/007Jeyapra34171?t=_iHNkMsdq2erdik4YUMzuA&s=09'">twitter</button>
+        </div>
+    </div>
+    <div class="content">
+        <div id="hello-container">
+            <span id="hello">HELLO THERE!<br>I am <span id="name">Jeyaprakash </span><br>
+            <span id="des">currently pursuing engineering in computer science</span>
+            </span>
+        </div>
+    </div>
+</body>
+</html>
